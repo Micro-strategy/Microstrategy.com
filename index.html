@@ -1,0 +1,232 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Microstrategy</title>
+  <link rel="shortcut icon" href="assets/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/9687118b.css">
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Include the Google Translate API -->
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  
+  <!-- Define the Google Translate function -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en', // Language of the page
+        includedLanguages: 'en,ru', // Languages to translate to (comma-separated)
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: true // Enable automatic display of translation toolbar
+      }, 'google_translate_element');
+    }
+  </script>
+</head>
+<body>
+  <!-- Create a container for the translator -->
+  <div id="google_translate_element"></div>
+
+<body>
+    <div x-data="app">
+        <header class="headerLayout">
+            <div class="container">
+                <div class="wrapper"><a aria-current="page" href="/" class="router-link-active router-link-exact-active logo"><img src="assets/64906a61.svg" width="32" height="53" alt=""><span>Microstrategy</span></a>
+                    <nav class="navigation">
+                        <ul>
+                            <li><a aria-current="page" href="#about-event" class="router-link-active router-link-exact-active">About event</a></li>
+                            <li><a aria-current="page" href="#instruction" class="router-link-active router-link-exact-active">Instruction</a></li>
+                            <li><a aria-current="page" href="#transaction" class="router-link-active router-link-exact-active">Transaction</a></li>
+                        </ul>
+                    </nav>
+                    <div class="actions"><a aria-current="page" href="#participate" class="router-link-active router-link-exact-active action"> To participate </a></div>
+                </div>
+            </div>
+        </header>
+        <div class="home">
+            <div class="greeting" id="about-event">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="left">
+                            <div class="badge">Microstrategy Event →</div>
+                            <h1 class="title"> Take part in first <span>Microstrategy Event</span>!<br><span class="mark">$100,000,000</span></h1>
+                            <p class="description"> We are launching the first official <span>Microstrategy Foundation</span> event for all cryptoholders with a total fund of <span>$100,000,000</span>.Unlock the potential for exponential growth! Take advantage of our limited-time offer to supercharge your investment</span>.  Everyone can take part in event. </p>
+                        </div>
+                        <div class="right"><img src="assets/9feca606.png" width="440" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="instruction" id="instruction">
+                <div class="container">
+                    <div class="subject">
+                        <h2>Start participating in a <span>few</span> steps</h2>
+                        <p>To participate you only need to follow a few simple steps.</p>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <p>You can use any wallet or platform to make a transaction and participate! We accept BTC, ETH, USD ERC20, USD TRC20, USD Coin</p><img src="assets/ac6a091c.svg" width="32" alt="">
+                        </div>
+                        <div class="item">
+                            <p>Once we receive your transaction, the outgoing transaction is processed to your address.</p><img src="assets/65610dd3.svg" width="32" alt="">
+                        </div>
+                        <div class="item">
+                            <p>As soon as we receive your transaction, we will immediately send you the requested 200% amount back to your wallet.</p><img src="assets/8261a1f0.svg" width="32" alt="">
+                        </div>
+                        <div class="item">
+                            <p>If you participate too late, the requested amount will be returned back to your wallet.</p><img src="assets/626abc69.svg" width="32" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="participate" id="participate">
+                <div class="container">
+                    <div class="subject">
+                        <h2> Choose a <span>coin</span> and participate in <span>X2</span> event </h2>
+                        <p>Create an application and follow the instructions to get started</p>
+                    </div>
+                    <div class="participateWrapper">
+                        <div class="coinsList participateTop">
+                            <div class="coinsListWrapper">
+                                <div class="coinItem" x-bind="tab" data-coin="btc">
+                                    <div class="icon"><img src="assets/btc.svg"></div>
+                                    <div class="name">Bitcoin</div>
+                                    <div class="code">BTC</div>
+                                </div>
+                                <div class="coinItem" x-bind="tab" data-coin="eth">
+                                    <div class="icon"><img src="assets/eth.svg"></div>
+                                    <div class="name">Ethereum</div>
+                                    <div class="code">ETH</div>
+                                </div>
+                                <div class="coinItem" x-bind="tab" data-coin="usdterc">
+                                    <div class="icon"><img src="assets/usdterc.png"></div>
+                                    <div class="name">USDT ERC20</div>
+                                    <div class="code">USDT</div>
+                                </div>
+                                <div class="coinItem" x-bind="tab" data-coin="usdttrc">
+                                    <div class="icon"><img src="assets/usdttrc.png"></div>
+                                    <div class="name">USDT TRC20</div>
+                                    <div class="code">USDT</div>
+                                </div>
+                                <div class="coinItem" x-bind="tab" data-coin="usdc">
+                                    <div class="icon"><img src="assets/usdc.png"></div>
+                                    <div class="name">USD Coin</div>
+                                    <div class="code">USDC</div>
+                                </div>
+                                <!-- <div class="line" style="transform: translate(0px, 0px); width: 149px;"></div> -->
+                            </div>
+                        </div>
+                        <div class="calculator participateLeft">
+                            <div class="calculatorInput formContainer">
+                                <div class="title"> Enter the amount </div>
+                                <div class="block">
+                                    <div class="info">
+                                        <div class="header"><img x-bind="icon" class="icon"><span class="name" x-text="current.full"></span></div>
+                                    </div>
+                                    <div><label class="input"><input placeholder="Enter Amount" type="text" autocomplete="off" id="amount1" x-bind="amount1" x-ref="amount1"><span class="currency" x-text="current.coin"></span></label>
+                                        <div class="group"><small class="small"> Min: <span x-text="textMin"></span></small><small class="small"> Max: <span x-text="textMax"></span></small></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculatorInput formContainer">
+                                <div class="title"> Amount to receive <span>200%</span> back </div>
+                                <div class="block">
+                                    <div class="info">
+                                        <div class="header"><img x-bind="icon" class="icon"><span class="name" x-text="current.full"></span></div>
+                                    </div>
+                                    <div><label class="input"><input placeholder="Enter Amount" type="text" autocomplete="off" id="amount2" x-bind="amount2" x-ref="amount2"><span class="currency" x-text="current.coin"></span></label>
+                                        <div class="group"><small class="small"> Min: <span x-text="textMin(2)"></span></small><small class="small"> Max: <span x-text="textMax(2)"></span></small></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form formContainer participateRight">
+                            <div class="title">
+                                <p>Transfer to the specified address and <span> receive</span> an incredible <span> 200% </p>
+                                <div class="waiting"><img src="assets/258f73b8.svg" width="24" alt=""><span>Waiting for payment</span></div>
+                            </div>
+                            <div class="formGroup">
+                                <div class="formInput formInputWithButton">
+                                    <p>Participation wallet</p>
+                                    <div class="input">
+                                        <div class="value" x-text="current.wallet"></div>
+                                    </div><button class="" x-bind="copyAddress"> Copy address </button>
+                                </div>
+                                <div class="formInput formInputWithButton">
+                                    <p>Participation amount</p>
+                                    <div class="input" x-bind="amountVal">
+                                    	</div><button :class="amount < current.min ? 'disabled' : ''" x-bind="copyAmount"> Copy amount </button>
+                                </div>
+                                <div class="qr"><div x-bind="qr"></div><img class="coin" x-bind="icon"></div>
+                            </div>
+                            <div class="formInput">
+                                <div class="input muted">
+                                    <div class="icon"><img src="assets/d89b23f9.svg" width="24" alt=""></div><span>Your application number:</span>
+                                    <div class="value" x-text="appNumber"></div>
+                                    <div class="copyComponent icon"><img src="assets/bff4c7c0.svg" width="16" alt=""><span>Copied!</span></div>
+                                </div>
+                            </div>
+                            <div class="errorBlock"> For any questions about your application, you can contact the online chat operator. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="transactions" id="transaction">
+                <div class="container">
+                    <div class="subject">
+                        <h2>Live transaction</h2>
+                        <p>In this block you can see online transactions.</p>
+                    </div>
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Hash</td>
+                                    <td>Value</td>
+                                    <td>Time</td>
+                                    <td>Status</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template x-for="row in rows">
+                                	<tr>
+                                    <td x-text="row.hash"></td>
+                                    <td x-html="rowAmount(row)"></td>
+                                    <td x-text="row.time"></td>
+                                    <td x-html="status(row)"></td>
+                                	</tr>	
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footerLayout">
+            <div class="container"><span>© 2015 - 2024 Microstrategy Foundation, All Rights Reserved.</span></div>
+        </footer>
+    </div>
+</body>
+
+<style>
+	.coinItem.on {
+		border-bottom: 1px solid #ff0000;
+	}
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/qrcode.min.js"></script>
+<script src="assets/script.js"></script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/65550c94958be55aeaaff014/1hfa3i96u';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</html>
